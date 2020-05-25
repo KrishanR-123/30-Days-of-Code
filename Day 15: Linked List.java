@@ -38,4 +38,6 @@ public static  Node insert(Node head,int data) {
         }   
         
 }
+	
+	
 
