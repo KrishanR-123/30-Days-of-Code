@@ -15,3 +15,7 @@ void enqueueCharacter(char ch){
 char popCharacter() {
         return stack.pop();
     }
+char dequeueCharacter()
+        {
+        return queue.remove();
+    }
