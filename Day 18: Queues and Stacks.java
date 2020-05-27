@@ -12,3 +12,6 @@ void pushCharacter(char ch)
 void enqueueCharacter(char ch){
         queue.add(ch);
      }
+char popCharacter() {
+        return stack.pop();
+    }
