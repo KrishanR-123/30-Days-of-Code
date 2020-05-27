@@ -9,3 +9,6 @@ void pushCharacter(char ch)
         {
         stack.push(ch);
     }
+void enqueueCharacter(char ch){
+        queue.add(ch);
+     }
