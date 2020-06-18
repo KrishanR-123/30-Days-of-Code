@@ -52,3 +52,24 @@ public class Solution {
         }
         throw new AssertionError("Exception wasn't thrown as expected");
     }
+    
+    public static void TestWithUniqueValues() {
+        int[] seq = TestDataUniqueValues.get_array();
+        if (seq.length < 2) {
+            throw new AssertionError("less than 2 elements in the array");
+        }
+
+        Integer[] tmp = new Integer[seq.length];
+        for (int i = 0; i < seq.length; ++i) {
+            tmp[i] = Integer.valueOf(seq[i]);
+        }
+        if (!((new LinkedHashSet<Integer>(Arrays.asList(tmp))).size() == seq.length)) {
+            throw new AssertionError("not all values are unique");
+        }
+
+        int expected_result = TestDataUniqueValues.get_expected_result();
+        int result = minimum_index(seq);
+        if (result != expected_result) {
+            throw new AssertionError("result is different than the expected result");
+        }
+    }
