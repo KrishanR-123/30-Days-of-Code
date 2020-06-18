@@ -12,3 +12,6 @@ public class Solution {
 
         return res;
     }
+    
+    private static final Scanner scanner = new Scanner(System.in);
+
