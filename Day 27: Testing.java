@@ -93,3 +93,11 @@ public class Solution {
         }
     }
 
+     public static void main(String[] args) {
+        TestWithEmptyArray();
+        TestWithUniqueValues();
+        TestWithExactlyTwoDifferentMinimums();
+        System.out.println("OK");
+    }
+}
+
