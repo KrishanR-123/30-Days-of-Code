@@ -21,3 +21,9 @@ public class Solution {
             return new int[0];
         }
     }
+
+    static class TestDataUniqueValues {
+
+        public static int[] get_array() {
+            return new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        }
